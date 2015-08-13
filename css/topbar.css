@@ -1,0 +1,53 @@
+/* Topbar Styles
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+
+.pink--background {
+	background-color: #fab5df;
+	margin: 60px 0;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.topbar {
+	background-color: #fab5df;
+	height: 60px;
+	overflow: hidden;
+
+}
+
+.topbar--content__left,
+.topbar--content__middle,
+.topbar--content__right {
+	display: inline-block;
+	float: left;
+	
+}
+
+.topbar--content__left {
+	margin-top: 6px;
+}
+
+.topbar--content__middle {
+	margin-left: 16%;
+	margin-top: -6px;
+}
+
+.topbar--content__right {
+	float: right;
+	text-align: right;
+	margin-top: -6px;
+}
+
+.topbar--link__button {
+	display: inline-block;
+	padding: 18px 10px;
+}
+
+.topbar--link__button:hover {
+	background-color: #f591c4;
+}
+
+.topbar--search input[type="search"] {
+	width: 130%;
+}
