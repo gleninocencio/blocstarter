@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: #FF0000 !important;
+  color: #eb008b !important;
 }
 
 img{
@@ -168,10 +168,6 @@ input[type='submit'] {
   font-family: "verlagbold", "HelveticaNeue", "Helvetica";
 }
 
-.btn-hero-message {
-  color: #e1a3c9;
-}
-
 .success-section {
   margin-top: 10%;
 }
@@ -221,6 +217,39 @@ input[type='submit'] {
   font-family: "Montserrat", "HelveticaNeue", "Helvetica";
 }
 
+.btn-success {
+  border: 3px solid #e1a3c9;
+  color: #e1a3c9;
+  display: inline-block;
+  padding: 5px;
+  font-family: "verlagbold", "HelveticaNeue", "Helvetica";
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media(max-width: 550px) {
+  .hero-message>h1 {
+    font-size: 48px;
+  }
+
+  .success-message>h2 {
+    font-size: 36px;
+  }
+
+}
+
+
+
 /* About
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 */
@@ -245,7 +274,43 @@ input[type='submit'] {
 
 }
 
+.btn-hero-message {
+  border: 3px solid #e1a3c9;
+  color: #e1a3c9;
+  display: inline-block;
+  padding: 5px;
+  font-family: "verlagbold", "HelveticaNeue", "Helvetica";
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
+.btn-hero-message:after {
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.btn-hero-message:hover,
+.btn-hero-message:active {
+  color: #0e83cd;
+}
+
+.btn-hero-message:hover:after,
+.btn-hero-message:active:after {
+  height: 100%;
+}
 
 /*  Footer
 ________________________________________________________________
@@ -275,10 +340,11 @@ footer {
 @media(max-width: 550px) {
 
     .footer_title {
+      width: 50%;
       display: block;
       text-align: center;
       margin-right: auto;
-      margin-left: auto;
+      margin-left: 25%;
     }
 
     .social_media_icons {
