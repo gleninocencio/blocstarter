@@ -1,5 +1,5 @@
 *
-* The Glen Project 
+* Blocstarter
 * Copyright 2015, Glen Inocencio
 * 5/10/2015
 */
@@ -245,6 +245,11 @@ input[type='submit'] {
   .success-message>h2 {
     font-size: 36px;
   }
+
+  .success-message {
+  margin-top: 30%;
+  margin-left: 0%;
+}
 
 }
 
